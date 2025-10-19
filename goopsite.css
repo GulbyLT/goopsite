@@ -18,6 +18,10 @@
 }
 
 #semitransparent {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 15px;
     position: absolute;
     top: 100px;
@@ -26,3 +30,31 @@
     bottom: 100px;
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+.content {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 50%;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.topthree, .bottomthree {
+    box-sizing: content-box;
+    height: 90%;
+    margin: 0 10px;
+    border-radius: 15px;
+    background-color: lightgray;
+}
+
+#topleft, #bottomleft, #topright, #bottomright {
+    width: 25%;
+}
+
+#topcenter, #bottomcenter {
+    width: 40%;
+}
+
