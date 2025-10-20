@@ -28,7 +28,7 @@
     left: 100px;
     right: 100px;
     bottom: 100px;
-    background: rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.11);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.4px);
     -webkit-backdrop-filter: blur(8.4px);
@@ -46,6 +46,7 @@
     margin: 20px;
 }
 
+
 .topthree, .bottomtwo {
     box-sizing: content-box;
     height: 90%;
@@ -53,18 +54,25 @@
     border-radius: 15px;
 }
 
-#topleft, #topright {
+#topcontent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    height: 40%;
+    
+
+}
+
+#topleft {
     font-family: "Bebas Neue", sans-serif;
     font-size: 40px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 50%;
     flex-wrap: wrap;
-    border-width: 4px;
-    border-style: solid;
-    border-color: white;
 }
 
 #bottomleft, #bottomright {
@@ -77,20 +85,25 @@
     color: white;
 }
 
-#topcenter {
+#toptext {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    width: 40%;
+    width: 50%;
     text-align: center;
+    padding: 0 40px;
+    box-sizing: content-box;
 }
 
 #gulbylogo {
-    width: 250px;
+    width: 200px;
     height: auto;
+    justify-content: center;
+    flex-shrink: 1;
+    min-width: 50px;
 }   
 
 .bebas-neue-regular {
@@ -100,16 +113,17 @@
 }
 
 .linkbutton {
-    width: 80%;
-    height: 15%;
-    margin: 10px 0;
-    border-radius: 10px;
-    background-color: darkgray;
+    width: 35%;
+    height: 35%;
+    margin: 5%;
+    border-radius: 15px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #steamicon {
-    width: 30%;
+    width: 60%;
     height: auto;
     justify-content: center;
 }
