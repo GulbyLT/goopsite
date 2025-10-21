@@ -52,6 +52,7 @@
     height: 90%;
     margin: 0 10px;
     border-radius: 15px;
+
 }
 
 #topcontent {
@@ -60,18 +61,19 @@
     align-items: center;
     width: 95%;
     height: 40%;
-    
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: none;
+    border-right: none;
 
 }
 
 #topleft {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 40px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 20%;
     flex-wrap: wrap;
 }
 
@@ -83,23 +85,20 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 40px;
     color: white;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 #toptext {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 70px;
+    font-size: 200px;
     color: white;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 50%;
+    width: 60%;
     text-align: center;
-    padding: 0 40px;
-    box-sizing: content-box;
 }
 
 #gulbylogo {
-    width: 200px;
+    width: 160px;
     height: auto;
     justify-content: center;
     flex-shrink: 1;

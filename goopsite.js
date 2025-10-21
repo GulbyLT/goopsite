@@ -2,42 +2,30 @@ let fursuitLink = document.getElementById("bottomleft");
 let codingLink = document.getElementById("bottomright");
 let topText = document.getElementById("toptext");
 let semitransparent = document.getElementById("semitransparent");
-let topLeft = document.getElementById("topleft");
-let topCenter = document.getElementById("toptext");
+let iconBody = document.getElementById("topleft");
+let nametextBody = document.getElementById("toptext");
 let bottomContent = document.getElementById("bottomcontent");
 let bottomLeft = document.getElementById("bottomleft");
 let bottomRight = document.getElementById("bottomright");
 
-topLeft.style.cursor = "pointer";
-topText.style.cursor = "pointer";
+
+
+iconBody.style.cursor = "default";
+topText.style.cursor = "default";
 fursuitLink.style.cursor = "pointer";
 codingLink.style.cursor = "pointer";
 
-topLeft.addEventListener("click", function() {
+iconBody.addEventListener("click", function() {
     window.location.href = "goopsite.html";
 });
 
-topLeft.addEventListener("mouseover", function() {
-    topLeft.style.transform = "scale(1.1)";
-    topLeft.style.transition = "transform 0.3s ease";
-    topLeft.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+iconBody.addEventListener("mouseover", function() {
+    iconBody.style.transform = "scale(1.1)";
+    iconBody.style.transition = "transform 0.3s ease";
 });
 
-topLeft.addEventListener("mouseout", function() {
-    topLeft.style.transform = "scale(1)";
-    topLeft.style.backgroundColor = "rgba(255, 255, 255, 0.0)";
-});
-
-topText.addEventListener("mouseover", function() {
-    topText.style.transform = "scale(1.05)";
-    topText.style.transition = "transform 0.3s ease";
-    topCenter.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-
-});
-
-topText.addEventListener("mouseout", function() {
-    topText.style.transform = "scale(1)";
-    topCenter.style.backgroundColor = "rgba(255, 255, 255, 0.0)";
+iconBody.addEventListener("mouseout", function() {
+    iconBody.style.transform = "scale(1)";
 });
 
 fursuitLink.addEventListener("click", function() {
