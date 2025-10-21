@@ -83,18 +83,36 @@
     align-items: center;
     width: 50%;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 40px;
+    /*shrink even faster than default to prevent overflow*/
+    font-size: clamp(12px, 3vw + 1vh, 100px);
+    flex-shrink: 3;
     color: white;
     border-left: 2px solid rgba(255, 255, 255, 0.5);
     border-right: 2px solid rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
 }
 
-#toptext {
+#headertext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+#topheader{
     font-family: "Bebas Neue", sans-serif;
-    font-size: 200px;
     color: white;
-    width: 60%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* responsive font: will grow to available space but stay within limits */
+    font-size: clamp(24px, 6vw + 1vh, 200px);
+    line-height: 1;
+    white-space: nowrap; /* remove if you want wrapping */
+    flex: 1 1 auto; /* allow grow & shrink */
+    margin: 0;
 }
 
 #gulbylogo {
@@ -105,25 +123,20 @@
     min-width: 50px;
 }   
 
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.linkbutton {
-    width: 35%;
-    height: 35%;
-    margin: 5%;
-    border-radius: 15px;
+#bottomcontent {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    width: 95%;
+    height: 40%;    
+    border-left: none;
+    border-right: none;
 }
 
-#steamicon {
-    width: 60%;
-    height: auto;
-    justify-content: center;
+#subheader {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: clamp(12px, 3vw + 1vh, 100px);
+    margin: 0;
 }
-

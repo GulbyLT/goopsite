@@ -1,19 +1,18 @@
 let fursuitLink = document.getElementById("bottomleft");
 let codingLink = document.getElementById("bottomright");
-let topText = document.getElementById("toptext");
 let semitransparent = document.getElementById("semitransparent");
 let iconBody = document.getElementById("topleft");
-let nametextBody = document.getElementById("toptext");
+let headertext = document.getElementById("headertext");
 let bottomContent = document.getElementById("bottomcontent");
 let bottomLeft = document.getElementById("bottomleft");
 let bottomRight = document.getElementById("bottomright");
 
 
-
+headertext.style.cursor = "default";
 iconBody.style.cursor = "default";
-topText.style.cursor = "default";
 fursuitLink.style.cursor = "pointer";
 codingLink.style.cursor = "pointer";
+
 
 iconBody.addEventListener("click", function() {
     window.location.href = "goopsite.html";
